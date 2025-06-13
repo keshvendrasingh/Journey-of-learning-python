@@ -1,0 +1,35 @@
+print(" Introduction About The Code ".center(185).title())
+print(" This Program Is Able To Find Second Largest Value Given By The User ".center(185).title())
+
+try:
+    Name = input("Type your name:-  ".upper())
+    if Name.isdigit():
+        raise ValueError
+    print("Hi", Name, ", we are welcoming you in this program. Enjoy the program.".title())
+except ValueError:
+    print("Sir, please type your name, not any numerical value.".title())
+    Name = "User"  # Fallback default name if input was invalid
+
+while True:
+    try:
+        a = int(input("Enter the value of a:-  "))
+        b = int(input("Enter the value of b:-  "))
+        c = int(input("Enter the value of c:-  "))
+    except ValueError:
+        print("Are", Name, "bhaishab integer value type karo yaar.")
+        continue
+
+    if (a < b and a > c) or (a > b and a < c):
+        second_largest_value = a
+    elif (b > a and b < c) or (b < a and b > c):
+        second_largest_value = b
+    else:
+        second_largest_value = c        
+
+    print("Your second largest value :- ", second_largest_value)
+
+    # Optional: Ask if user wants to continue
+    choice = input("Do you want to run again? (yes/no): ").lower()
+    if choice != "yes":
+        print("Thank you for using the program,", Name + "!")
+        break
