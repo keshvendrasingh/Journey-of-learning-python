@@ -1,0 +1,30 @@
+# 🧠 Second Largest Number Finder
+
+This is a simple Python program that takes **three numbers** as input from the user and finds the **second largest value** among them. It includes error handling, user interaction, and a friendly loop to run the program multiple times.
+
+## 🔧 Features
+
+- Asks for user's name (with validation)
+- Takes three numbers as input
+- Handles invalid inputs gracefully
+- Calculates and prints the second largest number
+- Allows user to run the program again or exit
+
+## 🖥️ How to Run
+
+1. Make sure Python is installed on your system.
+2. Copy the code into a `.py` file (e.g., `second_largest.py`)
+3. Run the program:
+   ```bash
+   python second_largest.py
+
+# Output of the code
+Type your name:-  Rahul  
+Hi Rahul , We Are Welcoming You In This Program. Enjoy The Program.
+Enter the value of a:-  12
+Enter the value of b:-  7
+Enter the value of c:-  30
+Your second largest value :-  12
+Do you want to run again? (yes/no): no
+Thank you for using the program, Rahul!
+
